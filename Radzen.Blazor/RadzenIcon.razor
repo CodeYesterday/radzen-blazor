@@ -2,5 +2,12 @@
 
 @if (Visible)
 {
-    <i @ref="@Element" style="@getStyle()" @attributes="Attributes" class="@GetCssClass()" id="@GetId()">@((MarkupString)Icon)</i>
+    if (IconX != null)
+    {
+        @IconX.RenderIcon(getStyle(), GetCssClass(), GetId(), Attributes)
+    }
+    else
+    {
+        <i @ref="@Element" style="@getStyle()" @attributes="Attributes" class="@GetCssClass()" id="@GetId()">@((MarkupString)Icon)</i>
+    }
 }

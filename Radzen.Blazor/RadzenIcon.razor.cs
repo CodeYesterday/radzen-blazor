@@ -19,6 +19,9 @@ namespace Radzen.Blazor
         [Parameter]
         public string Icon { get; set; }
 
+        [Parameter]
+        public IRadzenIcon IconX { get; set; }
+
         /// <summary>
         /// Gets or sets the icon color.
         /// </summary>

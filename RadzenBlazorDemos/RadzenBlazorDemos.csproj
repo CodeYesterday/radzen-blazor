@@ -4,6 +4,9 @@
     <PublishTrimmed>false</PublishTrimmed>
   </PropertyGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Resources\arrow-outline-down.svg" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="Radzen.Blazor" Version="*" Condition="'$(Configuration)' == 'Release'" />
     <ProjectReference Include="..\Radzen.Blazor\Radzen.Blazor.csproj" Condition="'$(Configuration)' != 'Release'" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="9.*-*" />
